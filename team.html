@@ -85,7 +85,7 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
 <!-- Top Navigation Bar -->
 <nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 backdrop-blur-xl">
-<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-center px-5 sm:px-8 py-6 max-w-screen-2xl mx-auto">
 <div class="text-2xl font-normal tracking-tighter text-[#1b1c1a] font-headline">Syncrate</div>
 <div class="hidden md:flex items-center gap-10">
 <a class="text-[#1b1c1a]/60 font-headline font-normal tracking-tight hover:text-[#85532e] transition-colors duration-300" href="#">Services</a>
@@ -93,12 +93,11 @@
 <a class="text-[#85532e] border-b-2 border-[#85532e] pb-1 font-headline font-normal tracking-tight transition-colors duration-300" href="#">Team</a>
 <a class="text-[#1b1c1a]/60 font-headline font-normal tracking-tight hover:text-[#85532e] transition-colors duration-300" href="#">Insights</a>
 </div>
-<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-headline text-sm font-medium hover:opacity-90 transition-opacity">Reach Out</button>
 </div>
 </nav>
 <main class="pt-32">
 <!-- Hero Section -->
-<section class="px-8 mb-24 md:mb-32 max-w-screen-2xl mx-auto">
+<section class="px-5 sm:px-8 mb-20 md:mb-32 max-w-screen-2xl mx-auto">
 <div class="max-w-4xl">
 <span class="font-label text-xs tracking-[0.2em] uppercase text-primary mb-6 block">Our Team</span>
 <h1 class="font-headline text-5xl md:text-7xl font-normal tracking-tighter leading-[1.1] mb-8 text-on-background">
@@ -110,115 +109,128 @@
 </div>
 </section>
 <!-- Team Grid - Asymmetric Editorial Layout -->
-<section class="px-8 pb-32 max-w-screen-2xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-x-12">
-<!-- Member 1 -->
-<div class="md:col-span-7 flex flex-col group">
-<div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container mb-8">
-<img alt="Team member" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a mature male executive in a neutral studio setting" src="/team-1.jpg"/>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="font-headline text-3xl font-normal mb-2">Kizito C.</h3>
-<p class="font-label text-sm text-primary mb-4 tracking-wide">Founder &amp; CEO</p>
-<p class="font-body text-on-surface-variant max-w-md leading-relaxed">
-                                Kizito is a 2x startup founder with over 6 years of experience in sales and business development. Drawing from firsthand experience building startups, he now works with founders on fundraising, go-to-market strategy, and growth..
-                            </p>
-</div>
-<a class="p-2 bg-surface-container-low rounded-full hover:bg-primary-container transition-colors" href="#">
-<img alt="LinkedIn" class="w-5 h-5 opacity-80" data-alt="LinkedIn logo icon" src="/linkedin-logo.jpg"/>
-</a>
-</div>
-</div>
-<!-- Member 2 -->
-<div class="md:col-span-5 flex flex-col md:mt-24 group">
-<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container mb-8">
-<img alt="Team member" class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700" data-alt="Professional female technologist portrait with soft lighting" src="/team-2.jpg"/>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="font-headline text-3xl font-normal mb-2">Joshua Maki.</h3>
-<p class="font-label text-sm text-primary mb-4 tracking-wide">Head of Founders</p>
-<p class="font-body text-on-surface-variant leading-relaxed">
-                                Joshua helps founders sharpen their story, clarify their market position, and structure the materials needed to communicate clearly with investors, partners, and early customers.
-                            </p>
-</div>
-<a class="p-2 bg-surface-container-low rounded-full hover:bg-primary-container transition-colors" href="#">
-<img alt="LinkedIn" class="w-5 h-5 opacity-80" data-alt="LinkedIn logo icon" src="/linkedin-logo.jpg"/>
-</a>
-</div>
-</div>
-<!-- Member 3 -->
-<div class="md:col-span-4 flex flex-col group">
-<div class="aspect-square overflow-hidden rounded-xl bg-surface-container mb-8">
-<img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Maiki Rainton" src="/team-3.jpg"/>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="font-headline text-2xl font-normal mb-2">Maiki Rainton</h3>
-<p class="font-label text-sm text-primary mb-4 tracking-wide">Chief Technology Officer</p>
-<p class="font-body text-on-surface-variant leading-relaxed">
-                                With over 5 years of experience building blockchain infrastructure and smart contract systems, Maiki adds technical credibility to Syncrate across product development, protocol design, and founder support for Web3-native teams.
-                            </p>
+<section class="px-5 sm:px-8 pb-24 sm:pb-32 max-w-screen-2xl mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 sm:gap-y-20 md:gap-x-12">
 
-<!-- Member 4 -->
-<div class="md:col-span-4 flex flex-col md:mt-12 group">
-<div class="aspect-square overflow-hidden rounded-xl bg-surface-container mb-8">
-<img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Zibah Damian" src="/team-4.jpg"/>
-</div>
-<div class="flex flex-col">
-<h3 class="font-headline text-2xl font-normal mb-2">Zibah Damian</h3>
-<p class="font-label text-sm text-primary mb-4 tracking-wide">People & Operations Lead</p>
-<p class="font-body text-on-surface-variant leading-relaxed">
-                            Zibah brings strength across talent, team operations, and internal coordination, helping Syncrate build the structure and people systems needed to support founders effectively.
-                        </p>
-                        
-                        </div>
-<a class="p-2 bg-surface-container-low rounded-full hover:bg-primary-container transition-colors" href="#">
-<img alt="LinkedIn" class="w-5 h-5 opacity-80" data-alt="LinkedIn logo icon" src="/linkedin-logo.jpg"/>
-</a>
-</div>
-</div>
-<!-- Member 5 -->
-<div class="md:col-span-4 flex flex-col group">
-<div class="aspect-square overflow-hidden rounded-xl bg-surface-container mb-8">
-<img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a male researcher in a minimalist setting" src="/team-5.jpg"/>
-</div>
-<div class="flex flex-col">
-<h3 class="font-headline text-2xl font-normal mb-2">David Aris</h3>
-<p class="font-label text-sm text-primary mb-4 tracking-wide">Research Lead</p>
-<p class="font-body text-on-surface-variant leading-relaxed">
-                            David works on market intelligence, founder research, and opportunity mapping to make sure the teams we support enter the market with clearer conviction.
-                        </p>
-</div>
-</div>
-<!-- Member 6 -->
-<div class="md:col-span-6 flex flex-col group">
-<div class="aspect-[3/2] overflow-hidden rounded-xl bg-surface-container mb-8">
-<img alt="Team member" class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700" data-alt="Sophisticated female professional portrait in soft light" src="/team-6.jpg"/>
-</div>
-<div class="flex flex-col">
-<h3 class="font-headline text-3xl font-normal mb-2">Inara Vyas</h3>
-<p class="font-label text-sm text-primary mb-4 tracking-wide">Venture Counsel</p>
-<p class="font-body text-on-surface-variant max-w-lg leading-relaxed">
-                            Inara supports founders on fundraising process, deal readiness, and strategic decision-making, helping teams navigate growth with more clarity and confidence.
-                        </p>
-</div>
-</div>
-<!-- Member 7 -->
-<div class="md:col-span-6 flex flex-col group">
-<div class="aspect-[3/2] overflow-hidden rounded-xl bg-surface-container mb-8">
-<img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Portrait of a friendly male professional in a modern office" src="/team-7.jpg"/>
-</div>
-<div class="flex flex-col">
-<h3 class="font-headline text-3xl font-normal mb-2">Leo Grant</h3>
-<p class="font-label text-sm text-primary mb-4 tracking-wide">Founder Success Partner</p>
-<p class="font-body text-on-surface-variant max-w-lg leading-relaxed">
-                            Leo works closely with founders on launch readiness, strategic connections, and the practical support needed to turn momentum into measurable growth.
-                        </p>
-</div>
-</div>
-</div>
+    <!-- Member 1 -->
+    <div class="md:col-span-7 flex flex-col group">
+      <div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container mb-6 sm:mb-8">
+        <img alt="Team member" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a mature male executive in a neutral studio setting" src="/team-1.jpg"/>
+      </div>
+      <div class="flex justify-between items-start gap-4">
+        <div>
+          <h3 class="font-headline text-2xl sm:text-3xl font-normal mb-2">Kizito C.</h3>
+          <p class="font-label text-sm text-primary mb-4 tracking-wide">Founder &amp; CEO</p>
+          <p class="font-body text-base sm:text-lg text-on-surface-variant max-w-md leading-relaxed">
+            Kizito is a 2x startup founder with over 6 years of experience in sales and business development. Drawing from firsthand experience building startups, he now works with founders on fundraising, go-to-market strategy, and growth.
+          </p>
+        </div>
+        <a class="p-2 bg-surface-container-low rounded-full hover:bg-primary-container transition-colors shrink-0" href="#">
+          <img alt="LinkedIn" class="w-5 h-5 opacity-80" data-alt="LinkedIn logo icon" src="/linkedin-logo.jpg"/>
+        </a>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="md:col-span-5 flex flex-col md:mt-24 group">
+      <div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container mb-6 sm:mb-8">
+        <img alt="Team member" class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700" data-alt="Professional female technologist portrait with soft lighting" src="/team-2.jpg"/>
+      </div>
+      <div class="flex justify-between items-start gap-4">
+        <div>
+          <h3 class="font-headline text-2xl sm:text-3xl font-normal mb-2">Joshua Maki</h3>
+          <p class="font-label text-sm text-primary mb-4 tracking-wide">Head of Founders</p>
+          <p class="font-body text-base sm:text-lg text-on-surface-variant leading-relaxed">
+            Joshua works with founders to sharpen their story, clarify positioning, and structure the materials needed to communicate clearly with investors, partners, and early customers.
+          </p>
+        </div>
+        <a class="p-2 bg-surface-container-low rounded-full hover:bg-primary-container transition-colors shrink-0" href="#">
+          <img alt="LinkedIn" class="w-5 h-5 opacity-80" data-alt="LinkedIn logo icon" src="/linkedin-logo.jpg"/>
+        </a>
+      </div>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="md:col-span-4 flex flex-col group">
+      <div class="aspect-square overflow-hidden rounded-xl bg-surface-container mb-6 sm:mb-8">
+        <img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Maiki Rainton" src="/team-3.jpg"/>
+      </div>
+      <div class="flex justify-between items-start gap-4">
+        <div>
+          <h3 class="font-headline text-2xl font-normal mb-2">Maiki Rainton</h3>
+          <p class="font-label text-sm text-primary mb-4 tracking-wide">Chief Technology Officer</p>
+          <p class="font-body text-base sm:text-lg text-on-surface-variant leading-relaxed">
+            With over 5 years of experience building blockchain infrastructure and smart contract systems, Maiki adds technical credibility to Syncrate across product development, protocol design, and founder support for Web3-native teams.
+          </p>
+        </div>
+        <a class="p-2 bg-surface-container-low rounded-full hover:bg-primary-container transition-colors shrink-0" href="#">
+          <img alt="LinkedIn" class="w-5 h-5 opacity-80" data-alt="LinkedIn logo icon" src="/linkedin-logo.jpg"/>
+        </a>
+      </div>
+    </div>
+
+    <!-- Member 4 -->
+    <div class="md:col-span-4 flex flex-col md:mt-12 group">
+      <div class="aspect-square overflow-hidden rounded-xl bg-surface-container mb-6 sm:mb-8">
+        <img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Zibah Damian" src="/team-4.jpg"/>
+      </div>
+      <div class="flex justify-between items-start gap-4">
+        <div>
+          <h3 class="font-headline text-2xl font-normal mb-2">Zibah Damian</h3>
+          <p class="font-label text-sm text-primary mb-4 tracking-wide">People &amp; Operations Lead</p>
+          <p class="font-body text-base sm:text-lg text-on-surface-variant leading-relaxed">
+            Zibah brings strength across talent, team operations, and internal coordination, helping Syncrate build the structure and people systems needed to support founders effectively.
+          </p>
+        </div>
+        <a class="p-2 bg-surface-container-low rounded-full hover:bg-primary-container transition-colors shrink-0" href="#">
+          <img alt="LinkedIn" class="w-5 h-5 opacity-80" data-alt="LinkedIn logo icon" src="/linkedin-logo.jpg"/>
+        </a>
+      </div>
+    </div>
+
+    <!-- Member 5 -->
+    <div class="md:col-span-4 flex flex-col group">
+      <div class="aspect-square overflow-hidden rounded-xl bg-surface-container mb-6 sm:mb-8">
+        <img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a male researcher in a minimalist setting" src="/team-5.jpg"/>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-headline text-2xl font-normal mb-2">David Aris</h3>
+        <p class="font-label text-sm text-primary mb-4 tracking-wide">Research Lead</p>
+        <p class="font-body text-base sm:text-lg text-on-surface-variant leading-relaxed">
+          David works on market intelligence, founder research, and opportunity mapping to make sure the teams we support enter the market with clearer conviction.
+        </p>
+      </div>
+    </div>
+
+    <!-- Member 6 -->
+    <div class="md:col-span-6 flex flex-col group">
+      <div class="aspect-[3/2] overflow-hidden rounded-xl bg-surface-container mb-6 sm:mb-8">
+        <img alt="Team member" class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700" data-alt="Sophisticated female professional portrait in soft light" src="/team-6.jpg"/>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-headline text-2xl sm:text-3xl font-normal mb-2">Inara Vyas</h3>
+        <p class="font-label text-sm text-primary mb-4 tracking-wide">Venture Counsel</p>
+        <p class="font-body text-base sm:text-lg text-on-surface-variant max-w-lg leading-relaxed">
+          Inara supports founders on fundraising process, deal readiness, and strategic decision-making, helping teams navigate growth with more clarity and confidence.
+        </p>
+      </div>
+    </div>
+
+    <!-- Member 7 -->
+    <div class="md:col-span-6 flex flex-col group">
+      <div class="aspect-[3/2] overflow-hidden rounded-xl bg-surface-container mb-6 sm:mb-8">
+        <img alt="Team member" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Portrait of a friendly male professional in a modern office" src="/team-7.jpg"/>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-headline text-2xl sm:text-3xl font-normal mb-2">Leo Grant</h3>
+        <p class="font-label text-sm text-primary mb-4 tracking-wide">Founder Success Partner</p>
+        <p class="font-body text-base sm:text-lg text-on-surface-variant max-w-lg leading-relaxed">
+          Leo works closely with founders on launch readiness, strategic connections, and the practical support needed to turn momentum into measurable growth.
+        </p>
+      </div>
+    </div>
+
+  </div>
 </section>
 <!-- CTA Section -->
 <section class="py-32 bg-surface-container-low">
