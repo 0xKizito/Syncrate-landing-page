@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Syncrate | Fundraising Readiness Partner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#a9c8fb",
+              "on-secondary-container": "#636263",
+              "on-primary": "#ffffff",
+              "surface-bright": "#fbf9f5",
+              "secondary": "#5f5e5f",
+              "inverse-surface": "#30312e",
+              "surface-container": "#f0eeea",
+              "on-tertiary-fixed": "#001c3b",
+              "surface-container-highest": "#e4e2de",
+              "secondary-container": "#e2dfe0",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#eae8e4",
+              "surface": "#fbf9f5",
+              "on-background": "#1b1c1a",
+              "inverse-primary": "#fbb88b",
+              "on-secondary-fixed-variant": "#474647",
+              "on-surface-variant": "#51443c",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#274873",
+              "tertiary": "#405f8c",
+              "error": "#ba1a1a",
+              "tertiary-fixed": "#d5e3ff",
+              "on-surface": "#1b1c1a",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#98b7e9",
+              "surface-tint": "#85532e",
+              "on-primary-container": "#693c19",
+              "inverse-on-surface": "#f2f0ec",
+              "outline": "#84746a",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#274773",
+              "surface-variant": "#e4e2de",
+              "on-primary-fixed": "#301400",
+              "on-secondary-fixed": "#1c1b1c",
+              "secondary-fixed": "#e5e2e3",
+              "primary": "#85532e",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "background": "#fbf9f5",
+              "outline-variant": "#d6c3b8",
+              "on-primary-fixed-variant": "#693c19",
+              "secondary-fixed-dim": "#c8c6c7",
+              "surface-dim": "#dbdad6",
+              "primary-fixed": "#ffdcc6",
+              "primary-fixed-dim": "#fbb88b",
+              "surface-container-low": "#f5f3ef",
+              "primary-container": "#e8a87c"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .horizon-gradient {
+            background: linear-gradient(135deg, #85532e 0%, #e8a87c 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 dark:bg-[#1b1c1a]/80 backdrop-blur-lg no-border bg-[#f5f3ef]/50 dark:bg-[#1b1c1a]/50">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-normal tracking-tighter text-[#1b1c1a] dark:text-[#fbf9f5] font-headline">
+                Syncrate
+            </div>
+<div class="hidden md:flex items-center space-x-12 font-['Space_Grotesk'] font-normal tracking-tight">
+<a class="text-[#85532e] dark:text-[#e8a87c] font-medium border-b-2 border-[#85532e] pb-1 hover:opacity-100 transition-all duration-300" href="#">Services</a>
+<a class="text-[#1b1c1a] dark:text-[#fbf9f5] opacity-70 hover:opacity-100 hover:text-[#85532e] transition-all duration-300" href="#">Insights</a>
+<a class="text-[#1b1c1a] dark:text-[#fbf9f5] opacity-70 hover:opacity-100 hover:text-[#85532e] transition-all duration-300" href="#">Team</a>
+<a class="text-[#1b1c1a] dark:text-[#fbf9f5] opacity-70 hover:opacity-100 hover:text-[#85532e] transition-all duration-300" href="#">About Us</a>
+</div>
+<button class="bg-primary text-on-primary rounded-full px-8 py-3 font-headline text-sm tracking-wide hover:opacity-90 transition-all duration-300">
+                Reach Out
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-12 grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 lg:col-span-6 z-10">
+<p class="font-headline text-xs tracking-[0.2em] uppercase text-primary mb-6">Fundraising Readiness for Early-Stage Startups</p>
+<h1 class="font-headline text-7xl md:text-8xl font-normal leading-[1.05] tracking-tighter text-on-surface mb-8">
+                    Backing Bold Builders
+                </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-lg mb-12 leading-relaxed">
+                    We help early-stage founders turn bold ideas into fundable companies through sharper decks, stronger fundraising materials, clearer investor positioning, and targeted VC access.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary rounded-full px-10 py-4 font-headline text-base tracking-wide horizon-gradient hover:shadow-lg transition-all duration-300">
+                        Reach Out
+                    </button>
+<button class="bg-transparent border border-outline-variant/20 text-on-surface rounded-full px-10 py-4 font-headline text-base tracking-wide hover:bg-surface-container transition-all duration-300">
+                        Our Approach
+                    </button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-6 relative h-[600px] mt-12 lg:mt-0">
+<div class="absolute inset-0 bg-surface-container-low rounded-[2.5rem] overflow-hidden">
+<img alt="Cinematic rocket launch representing high-growth acceleration" class="w-full h-full object-cover mix-blend-multiply opacity-80" data-alt="Cinematic rocket launch representing high-growth acceleration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAGoo2lTtId13jHZhG-AnihYn6de4f-Pm1YfT1CIKPsMmc10D46yR17mGij9wz4tnQsLCyrSY1oxfeXGurSN9Dy35H0CJpp_21vJvhbNbJkc48Psy2aelAM7p4CBbRBNMhduRgIIJEfPeA3Nx9Af5NlGS_jyXUPoX4c2vzZdryra8Knae8nPNXhpiQAl3qNu-L7VHgdB6sTEW7F7ZzBkn1tmsskNIgvYZ5CtHQ0pIywt8-d4_kXxckkoK2QRcHFlWHCL7rtF2WtIA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<!-- Glass Card -->
+<div class="absolute -bottom-6 -left-6 bg-surface-bright/80 backdrop-blur-xl p-8 rounded-xl shadow-2xl max-w-xs border border-white/20">
+<p class="font-headline text-4xl text-primary mb-2">50+</p>
+<p class="font-body text-sm text-on-surface-variant">Deck reviews, fundraising narratives, and investor readiness workflows shaped for ambitious early-stage teams.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portco Section (Logo Ticker) -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-12 overflow-hidden">
+<p class="font-headline text-center text-xs tracking-[0.2em] uppercase text-on-surface-variant/60 mb-12">Trusted by Bold Founders Building What’s Next</p>
+<div class="flex flex-nowrap items-center space-x-20 overflow-x-auto no-scrollbar py-4 grayscale opacity-50">
+<div class="flex-shrink-0 font-headline text-2xl tracking-tighter">EnqAI</div>
+<div class="flex-shrink-0 font-headline text-2xl tracking-tighter">Nova Labs</div>
+<div class="flex-shrink-0 font-headline text-2xl tracking-tighter">Lattice Protocol</div>
+<div class="flex-shrink-0 font-headline text-2xl tracking-tighter">VectorHQ</div>
+<div class="flex-shrink-0 font-headline text-2xl tracking-tighter">Atlas Compute</div>
+<div class="flex-shrink-0 font-headline text-2xl tracking-tighter">Signal Ventures</div>
+<!-- Duplicate for loop feel -->
+<div class="flex-shrink-0 font-headline text-2xl tracking-tighter">EnqAI</div>
+</div>
+</div>
+</section>
+<!-- In the News Section -->
+<section class="py-32 px-12 max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<p class="font-headline text-xs tracking-[0.2em] uppercase text-primary mb-4">Market Intelligence</p>
+<h2 class="font-headline text-5xl font-normal tracking-tight">Insights</h2>
+</div>
+<a class="font-headline text-sm tracking-widest uppercase text-primary border-b border-primary/20 pb-1 hover:border-primary transition-all" href="#">All Insights</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- News Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-xl bg-surface-container-high overflow-hidden mb-6 transition-all duration-500 group-hover:shadow-xl">
+<img alt="Abstract visualization of blockchain nodes" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract visualization of blockchain nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH7NJ06v1T9usQnvNvcL7FM5QT0zMfrzALif8EkAtgyKiBiciAh4WjqeBYVInCuzGCfxLPbydiT5Ou25etu4-p5YJjfpZzqAbVhy_LxoOvK-VXRP89q9uGxFtNw3qRw8_OIPgY6mGD4b1QdTSN8x5blFR_TyOh1Yw2lnIryCsUzTQ2-IOiw0Tc8pq5Phr74MHF2oHhlSs-MCkJQkeXyn8DdKO-fGPCOu81H-8ll-M645ctNn4JAxjnuSzfhskI2b7iEle_cOpD3ys"/>
+</div>
+<p class="font-headline text-xs text-primary mb-3">Jan 12, 2025</p>
+<h3 class="font-headline text-xl leading-tight text-on-surface group-hover:text-primary transition-colors">What Makes an Early-Stage Startup Fundable in Today’s Market</h3>
+</div>
+<!-- News Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-xl bg-surface-container-high overflow-hidden mb-6 transition-all duration-500 group-hover:shadow-xl">
+<img alt="High-tech neural network graphic" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-tech neural network graphic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMs6Pdt7GQmqDzPCSwP63kuwGdypDAgWyfb8mOxlWj4WofiKFdZeF-pdc3zPLNuZCxEirahOtCEqQJGEoYxmoZmzNeP7_gld1UuI_RRFTeN0zd5NJkVZJdGh0dH4UDwy2Li7NlAoUJt9SASxkp4WfCVkKs4C8edkgnFWc9kZ_KsWQG77g1bZE5fPQDHsc7NBrbJDFlNlpJ4S_yGj7VVxRJeYX2S8DvQqK3KX3IzHROz4q9O2ERzHEmcz7dRFI-SfcwbyGC8I-yKFE"/>
+</div>
+<p class="font-headline text-xs text-primary mb-3">Apr 28, 2024</p>
+<h3 class="font-headline text-xl leading-tight text-on-surface group-hover:text-primary transition-colors">How to Build a Fundraising Narrative Investors Actually Understand</h3>
+</div>
+<!-- News Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-xl bg-surface-container-high overflow-hidden mb-6 transition-all duration-500 group-hover:shadow-xl">
+<img alt="Minimalist abstract digital art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist abstract digital art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmcNIqV7gdW1njOK_YATfs6vGvmFwqTHJMANuZd_-T5VkG1966XoVI5XvMPUX-ZsETZf3ozE7_8rBaTaugUAZJBXV1avyvYeUkEV3IEcxI9SMuucHIBGbn7qjwLRrzPxY_zG-S0fWEwsUTnLSLynFTI_qTL6eHp0JubsNKlR1V-imt0ZHkuEiIvs9bI3bB2tG8Icga2GiuXsHGFk5oJRrIH05aeNcNJ8ME5297XnUdlqOd3U4p3xJXPemV65DrE1qw-w6ZPSt5EOA"/>
+</div>
+<p class="font-headline text-xs text-primary mb-3">Apr 15, 2024</p>
+<h3 class="font-headline text-xl leading-tight text-on-surface group-hover:text-primary transition-colors">From Deck to Data Room: The Fundraising Materials Every Founder Needs</h3>
+</div>
+<!-- News Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] rounded-xl bg-surface-container-high overflow-hidden mb-6 transition-all duration-500 group-hover:shadow-xl">
+<img alt="Satellite view of Earth at night" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Satellite view of Earth at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABwQ3p2AEbLat2dhTkUwsGphMCqbO9TaUxerk_yzubXxrV8WbYDKc-EGksjJKM8onZesY0OvdQPofAHx2_SqgM2VvxY69Xp1Y0jVS1ubnw9JS0u_RKRPpDGzgyzQpD9CWkHAF1XG17OjedGNDzKSB2bQTBIcqKyToxk_solJIG4oWXJ6pWDBHL7yP3jVt2IEIGuelfiENxAbso6OX9Sx1Vce_mAqN2mIiL7IBi3zPdr-hqpvL-jZzTiKh85-MpHwmUkhSG6HzQ1lY"/>
+</div>
+<p class="font-headline text-xs text-primary mb-3">Mar 30, 2024</p>
+<h3 class="font-headline text-xl leading-tight text-on-surface group-hover:text-primary transition-colors">Why Investor Positioning Matters More Than Warm Intros Alone</h3>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 lg:col-span-4">
+<h2 class="font-headline text-5xl font-normal tracking-tight mb-8">Founder Testimonials</h2>
+<div class="flex space-x-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-8">
+<div class="bg-surface-container-lowest p-16 rounded-[2rem] relative">
+<span class="material-symbols-outlined text-primary-container text-6xl absolute top-8 left-8 opacity-20">format_quote</span>
+<div class="relative z-10">
+<p class="font-headline text-3xl leading-snug text-on-surface mb-12">
+                                "Syncrate helped us turn a rough fundraising story into a clear, investor-ready narrative. From refining our deck to sharpening our positioning, they made us significantly more prepared for VC conversations."
+                            </p>
+<div class="flex items-center space-x-6">
+<img alt="Executive portrait of Alex Thorne" class="w-16 h-16 rounded-full object-cover" data-alt="Executive portrait of Alex Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs8mqiQaU689xZVul6NrMW5e8Nh_Ihef66VT0kJcy5-aJetAvqgggmhGGEkbFKhiTrDYs_Ut_tNAbT_uLIMMxdu_o4XBdPNQbJsYDMgX13BxBXPWLpJou0x3JZz-qyUx8Dlii4eNa8_MZQIKNgRuhDtgsQ8vfCDmX5YIJxZb4QuJn8MstD--o9o4pxOoBRJVRRm53pX_yLZhlcnBIshMvi2l-RVb6kIjWUNOF2nyRv0qBN3cp7qupk0RCxi7iVMfruyX6zDOSzVJE"/>
+<div>
+<h4 class="font-headline text-lg font-bold">Alex Thorne</h4>
+<p class="text-on-surface-variant text-sm">Co-Founder, EnqAI</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-12 max-w-[1440px] mx-auto">
+<div class="bg-[#1b1c1a] rounded-[3rem] p-20 text-white grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<p class="font-headline text-xs tracking-[0.2em] uppercase text-primary-container mb-6">Inquiries</p>
+<h2 class="font-headline text-6xl font-normal tracking-tight mb-8">Talk to our team</h2>
+<p class="font-body text-xl text-white/60 leading-relaxed mb-12">
+                    Whether you're a founder preparing to raise or a startup looking to sharpen its investor story, we're ready to help you get fundraise-ready.
+                </p>
+<div class="space-y-6">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary-container">mail</span>
+<span class="font-headline text-lg opacity-80">partnerships@syncrate.vc</span>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary-container">location_on</span>
+<span class="font-headline text-lg opacity-80">Zurich | Singapore | New York</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col space-y-8">
+<div class="space-y-2">
+<label class="font-headline text-sm tracking-widest uppercase opacity-40">Name</label>
+<input class="w-full bg-white/5 border-none rounded-xl p-5 text-white placeholder:text-white/20 focus:ring-1 focus:ring-primary-container transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-headline text-sm tracking-widest uppercase opacity-40">Work Email</label>
+<input class="w-full bg-white/5 border-none rounded-xl p-5 text-white placeholder:text-white/20 focus:ring-1 focus:ring-primary-container transition-all" placeholder="john@company.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-headline text-sm tracking-widest uppercase opacity-40">Your Company</label>
+<input class="w-full bg-white/5 border-none rounded-xl p-5 text-white placeholder:text-white/20 focus:ring-1 focus:ring-primary-container transition-all" placeholder="Acme Inc." type="text"/>
+</div>
+<button class="w-full py-5 rounded-xl font-headline text-lg bg-primary-container text-on-primary-container hover:opacity-90 transition-all mt-4">
+                    Submit Inquiry
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-[#f5f3ef] dark:bg-[#1b1c1a] font-['Manrope'] text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-16 max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-normal text-[#1b1c1a] dark:text-[#fbf9f5] mb-6">Syncrate</div>
+<p class="text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 mb-8 max-w-xs leading-relaxed">
+                    Fundraising readiness for bold builders. Helping early-stage founders refine their narrative, strengthen their materials, and approach the right investors with confidence.
+                </p>
+</div>
+<div class="col-span-1">
+<h5 class="font-headline text-[#1b1c1a] dark:text-[#fbf9f5] mb-6">Company</h5>
+<div class="flex flex-col space-y-4">
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors" href="#">Services</a>
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors" href="#">Insights</a>
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="col-span-1">
+<h5 class="font-headline text-[#1b1c1a] dark:text-[#fbf9f5] mb-6">Governance</h5>
+<div class="flex flex-col space-y-4">
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors" href="#">Legal</a>
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="col-span-1">
+<h5 class="font-headline text-[#1b1c1a] dark:text-[#fbf9f5] mb-6">Connect</h5>
+<div class="flex space-x-4 mb-8">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 px-16 max-w-[1440px] mx-auto border-t border-outline-variant/10 pt-10 flex flex-col md:flex-row justify-between items-center text-[#1b1c1a]/40 text-xs tracking-widest uppercase">
+<div>© 2024 Syncrate. All rights reserved. Fundraising Readiness Partner.</div>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<span>Zurich HQ</span>
+<span>Singapore</span>
+<span>NYC</span>
+</div>
+</div>
+</footer>
+
+</body></html>
