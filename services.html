@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Services</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#85532e",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#a9c8fb",
+            "surface-dim": "#dbdad6",
+            "on-secondary-fixed-variant": "#474647",
+            "secondary-container": "#e2dfe0",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f5f3ef",
+            "on-primary-fixed": "#301400",
+            "on-tertiary-fixed-variant": "#274773",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#693c19",
+            "surface-container-high": "#eae8e4",
+            "on-tertiary-fixed": "#001c3b",
+            "tertiary-fixed": "#d5e3ff",
+            "inverse-primary": "#fbb88b",
+            "secondary-fixed-dim": "#c8c6c7",
+            "on-surface": "#1b1c1a",
+            "primary": "#85532e",
+            "on-primary-container": "#693c19",
+            "outline-variant": "#d6c3b8",
+            "secondary": "#5f5e5f",
+            "on-secondary-fixed": "#1c1b1c",
+            "secondary-fixed": "#e5e2e3",
+            "on-primary": "#ffffff",
+            "inverse-on-surface": "#f2f0ec",
+            "surface-bright": "#fbf9f5",
+            "primary-fixed-dim": "#fbb88b",
+            "primary-container": "#e8a87c",
+            "background": "#fbf9f5",
+            "outline": "#84746a",
+            "on-secondary-container": "#636263",
+            "on-surface-variant": "#51443c",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "tertiary": "#405f8c",
+            "surface": "#fbf9f5",
+            "surface-container": "#f0eeea",
+            "surface-container-highest": "#e4e2de",
+            "on-background": "#1b1c1a",
+            "inverse-surface": "#30312e",
+            "tertiary-container": "#98b7e9",
+            "surface-variant": "#e4e2de",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#ffdcc6",
+            "on-tertiary-container": "#274873"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Manrope"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-nav {
+      backdrop-filter: blur(16px);
+    }
+    .horizon-gradient {
+      background: linear-gradient(135deg, #85532e 0%, #e8a87c 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 dark:bg-[#1b1c1a]/80 backdrop-blur-xl">
+    <div class="flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto">
+      <div class="flex items-center gap-12">
+        <span class="text-xl font-normal tracking-tighter text-[#1b1c1a] dark:text-[#fbf9f5] font-headline">Syncrate</span>
+        <div class="hidden md:flex gap-8 items-center">
+          <a class="font-['Space_Grotesk'] font-normal tracking-tight text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors duration-300" href="#">Home</a>
+          <a class="font-['Space_Grotesk'] font-normal tracking-tight text-[#85532e] dark:text-[#e8a87c] border-b border-[#85532e]/30 transition-colors duration-300" href="#">Services</a>
+          <a class="font-['Space_Grotesk'] font-normal tracking-tight text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors duration-300" href="#">Process</a>
+          <a class="font-['Space_Grotesk'] font-normal tracking-tight text-[#1b1c1a]/60 dark:text-[#fbf9f5]/60 hover:text-[#85532e] dark:hover:text-[#e8a87c] transition-colors duration-300" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="pt-48 pb-20 px-12 max-w-[1440px] mx-auto overflow-hidden">
+      <div class="grid grid-cols-12 gap-8 items-end">
+        <div class="col-span-12 lg:col-span-7">
+          <span class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-6 block">Our Services</span>
+          <h1 class="font-headline text-6xl md:text-7xl font-normal tracking-tight text-on-surface leading-[1.1] mb-8">
+            Fundraising support <br/> for early-stage founders
+          </h1>
+          <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+            Syncrate helps founders get clear on their raise, sharpen how the company is positioned, strengthen investor materials, and run a more focused fundraising process.
+          </p>
+        </div>
+
+        <div class="col-span-12 lg:col-span-5 relative">
+          <div class="absolute -bottom-10 -right-10 w-40 h-40 horizon-gradient rounded-full blur-3xl opacity-20"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Pricing Section -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-[1440px] mx-auto px-12">
+        <div class="mb-20">
+          <h2 class="font-headline text-4xl font-normal text-on-surface mb-4">Ways to work with Syncrate</h2>
+          <p class="text-on-surface-variant max-w-md">
+            Two engagement options depending on whether you need fundraising preparation only or active support through investor outreach and follow-up.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Option 1: Foundation -->
+          <div class="bg-surface-container-lowest p-12 rounded-xl flex flex-col transition-all duration-300 hover:bg-surface-container-high group">
+            <div class="mb-10">
+              <span class="font-label text-[10px] uppercase tracking-widest text-primary mb-2 block">Option 01</span>
+              <h3 class="font-headline text-3xl mb-4">Foundation</h3>
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-headline font-normal">$1,000</span>
+                <span class="text-on-surface-variant text-sm">one-time fee</span>
+              </div>
+            </div>
+
+            <div class="space-y-6 mb-12 flex-grow">
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Investor deck and fundraising materials refinement</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Fundraising narrative and investor positioning</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Review of how the raise is structured and presented</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Curated investor list aligned to your stage, category, and round</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Founder gets the materials and list to run outreach directly</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="w-full border border-outline-variant/20 py-4 rounded-full font-label text-sm uppercase tracking-widest text-on-surface hover:bg-on-surface hover:text-surface transition-all duration-300">
+              Choose Foundation
+            </button>
+          </div>
+
+          <!-- Option 2: Momentum -->
+          <div class="relative p-12 rounded-xl flex flex-col transition-all duration-300 bg-surface-container-lowest hover:bg-surface-container-high border border-primary/10 shadow-sm overflow-hidden group">
+            <div class="absolute top-0 right-0 horizon-gradient px-6 py-2 rounded-bl-xl">
+              <span class="text-on-primary font-label text-[10px] uppercase tracking-widest font-bold">Recommended</span>
+            </div>
+
+            <div class="mb-10">
+              <span class="font-label text-[10px] uppercase tracking-widest text-primary mb-2 block">Option 02</span>
+              <h3 class="font-headline text-3xl mb-4">Momentum</h3>
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-headline font-normal">$1,000</span>
+                <span class="text-on-surface-variant text-sm">+ 3% success fee</span>
+              </div>
+            </div>
+
+            <div class="space-y-6 mb-8 flex-grow">
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3 font-medium text-on-surface">
+                  <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                  <span>Everything in Foundation</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Direct investor outreach on your behalf</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Follow-up and investor pipeline management</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">Support through active fundraising conversations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  <span class="text-on-surface-variant">More structure, consistency, and momentum throughout the raise</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-8">
+              <p class="text-[11px] leading-relaxed text-on-surface-variant italic opacity-70">
+                * Success fee applies only to capital closed from investors directly sourced or managed by Syncrate. Detailed terms are shared during onboarding.
+              </p>
+            </div>
+
+            <button class="w-full horizon-gradient py-4 rounded-full font-label text-sm uppercase tracking-widest text-on-primary shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all duration-300">
+              Choose Momentum
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
