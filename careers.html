@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Careers | Syncrate</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -70,21 +71,25 @@
             "lg": "8px",
             "xl": "8px",
             "full": "9999px"
-          },
-        },
-      },
+          }
+        }
+      }
     }
   </script>
   <style>
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
+
     body {
       font-family: 'Space Grotesk', sans-serif;
       background-color: #fbf9f5;
       color: #1b1c1a;
     }
-    .headline-font { font-family: 'Space Grotesk', sans-serif; }
+
+    .headline-font {
+      font-family: 'Space Grotesk', sans-serif;
+    }
 
     .collapsible-content {
       max-height: 0;
@@ -92,8 +97,9 @@
       transition: max-height 0.5s ease-out, opacity 0.3s ease-in;
       opacity: 0;
     }
+
     .collapsible-content.expanded {
-      max-height: 2000px;
+      max-height: 6000px;
       opacity: 1;
     }
   </style>
@@ -102,7 +108,7 @@
 
   <!-- Top Navigation Bar -->
   <nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 backdrop-blur-xl shadow-[0px_24px_48px_-12px_rgba(27,28,26,0.06)]">
-    <div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+    <div class="flex justify-between items-center w-full px-5 sm:px-8 py-6 max-w-[1440px] mx-auto">
       <div class="text-2xl font-normal tracking-tighter text-[#1b1c1a] headline-font">Syncrate</div>
       <div class="hidden md:flex items-center gap-10">
         <a class="text-[#1b1c1a]/60 font-['Space_Grotesk'] font-normal tracking-tight hover:text-[#85532e] transition-colors duration-300" href="#">Home</a>
@@ -113,24 +119,24 @@
     </div>
   </nav>
 
-  <main class="pt-32">
-    <!-- Section 1: Hero -->
-    <section class="max-w-[1440px] mx-auto px-8 mb-24 md:mb-32">
+  <main class="pt-28 sm:pt-32">
+    <!-- Hero -->
+    <section class="max-w-[1440px] mx-auto px-5 sm:px-8 mb-20 md:mb-28">
       <div class="max-w-4xl">
         <span class="inline-block headline-font text-primary text-xs tracking-[0.2em] uppercase mb-6">Careers</span>
-        <h1 class="headline-font text-[3.5rem] md:text-[5rem] leading-[0.95] tracking-tighter text-on-background mb-8 md:mb-10 font-light">
+        <h1 class="headline-font text-[3rem] sm:text-[4rem] md:text-[5rem] leading-[0.95] tracking-tighter text-on-background mb-8 font-light">
           Join Syncrate
         </h1>
         <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed font-light">
-          We are building a sharper, more structured way for early-stage founders to approach fundraising. Right now, we are hiring for roles across sourcing and execution.
+          We are building a more structured way for early-stage founders to approach fundraising. Right now, we are hiring across sourcing and execution.
         </p>
       </div>
     </section>
 
-    <!-- Section 2: Open Roles -->
-    <section class="bg-surface-container-low py-20 md:py-32">
-      <div class="max-w-[1440px] mx-auto px-8">
-        <div class="flex flex-col md:flex-row justify-between items-baseline mb-14 md:mb-20 gap-8">
+    <!-- Open Roles -->
+    <section class="bg-surface-container-low py-16 md:py-24">
+      <div class="max-w-[1440px] mx-auto px-5 sm:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-12 md:mb-16 gap-6">
           <h2 class="headline-font text-4xl md:text-5xl tracking-tighter">Open Roles</h2>
           <div class="flex gap-4 flex-wrap">
             <span class="px-4 py-1.5 bg-surface-container-lowest rounded-lg text-xs font-medium headline-font text-on-surface-variant border border-outline-variant/20">Remote</span>
@@ -145,7 +151,7 @@
               <div class="space-y-4 flex-1">
                 <div class="flex items-center gap-3">
                   <span class="w-2 h-2 rounded-full bg-primary-container"></span>
-                  <span class="text-xs uppercase tracking-widest headline-font text-primary">Business Development</span>
+                  <span class="text-xs uppercase tracking-widest headline-font text-primary">Sales</span>
                 </div>
                 <h3 class="headline-font text-2xl md:text-3xl tracking-tight">Business Development Lead</h3>
                 <p class="text-on-surface-variant max-w-2xl leading-relaxed">
@@ -164,26 +170,25 @@
               </div>
             </div>
 
-            <!-- Expanded Description -->
             <div class="collapsible-content" id="desc-1">
-              <div class="mt-12 pt-12 border-t border-outline-variant/20 grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-8 space-y-12">
+              <div class="mt-8 md:mt-12 pt-8 md:pt-12 border-t border-outline-variant/20 grid grid-cols-1 gap-8 md:gap-12">
+                <div class="w-full space-y-8 md:space-y-12">
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">1. About Syncrate</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">About Syncrate</h4>
                     <p class="text-on-surface-variant leading-relaxed">
                       Syncrate supports early-stage founders across fundraising readiness, investor positioning, materials, investor targeting, and execution support. We work closely with founders who want a more structured fundraising process.
                     </p>
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">2. The Role</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">The Role</h4>
                     <p class="text-on-surface-variant leading-relaxed">
                       As Business Development Lead, you will be responsible for identifying high-potential founders and projects that are a strong fit for Syncrate. Your focus is on starting relevant conversations, qualifying opportunities, and helping convert strong-fit founders into clients.
                     </p>
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">3. Responsibilities</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">Responsibilities</h4>
                     <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
                       <li>Source early-stage founders and projects that fit Syncrate’s offering.</li>
                       <li>Run targeted outbound across platforms such as X, LinkedIn, Telegram, and email.</li>
@@ -194,7 +199,7 @@
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">4. Requirements</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">Requirements</h4>
                     <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
                       <li>Strong communication and outreach skills.</li>
                       <li>Comfortable initiating conversations with founders and operators.</li>
@@ -205,34 +210,39 @@
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">5. Compensation</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">Compensation</h4>
                     <p class="text-on-surface-variant leading-relaxed">
                       Performance-based compensation with upside tied to closed client engagements.
                     </p>
                   </div>
 
-                  <!-- Integrated Form -->
-                  <div class="pt-12 border-t border-outline-variant/10">
-                    <h4 class="headline-font text-xl mb-8">Application Details</h4>
-                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="pt-8 md:pt-12 border-t border-outline-variant/10">
+                    <h4 class="headline-font text-xl mb-6 md:mb-8">Application Details</h4>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                       <div class="space-y-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Full Name</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
+                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
                       </div>
+
                       <div class="space-y-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Email Address</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
+                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
                       </div>
+
                       <div class="space-y-2 md:col-span-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">LinkedIn Profile URL</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
+                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
                       </div>
+
                       <div class="space-y-2 md:col-span-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Why are you a fit for this role?</label>
-                        <textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience with outreach, founder conversations, and sourcing." rows="4"></textarea>
+                        <textarea class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience with outreach, founder conversations, and sourcing." rows="4"></textarea>
                       </div>
-                      <div class="md:col-span-2 pt-4">
-                        <button class="w-full bg-on-background text-surface rounded-lg py-4 font-medium headline-font hover:opacity-90 transition-opacity" type="submit">Submit Application</button>
+
+                      <div class="md:col-span-2 pt-2 md:pt-4">
+                        <button class="w-full bg-primary text-on-primary rounded-lg py-4 font-medium headline-font hover:bg-primary/90 transition-all" type="submit">
+                          Apply for this position
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -247,7 +257,7 @@
               <div class="space-y-4 flex-1">
                 <div class="flex items-center gap-3">
                   <span class="w-2 h-2 rounded-full bg-primary-container"></span>
-                  <span class="text-xs uppercase tracking-widest headline-font text-primary">Fundraising</span>
+                  <span class="text-xs uppercase tracking-widest headline-font text-primary">Operations</span>
                 </div>
                 <h3 class="headline-font text-2xl md:text-3xl tracking-tight">Fundraising Strategist</h3>
                 <p class="text-on-surface-variant max-w-2xl leading-relaxed">
@@ -259,33 +269,32 @@
                 </button>
               </div>
               <div>
-                <button class="bg-surface-container-low text-on-background border border-outline-variant/20 rounded-lg px-8 py-4 text-sm font-medium headline-font flex items-center gap-2 hover:bg-surface-container-high transition-all">
+                <button class="bg-primary text-on-primary rounded-lg px-8 py-4 text-sm font-medium headline-font flex items-center gap-2 hover:bg-primary/90 transition-all">
                   Apply for this position
                   <span class="material-symbols-outlined text-lg">arrow_forward</span>
                 </button>
               </div>
             </div>
 
-            <!-- Expanded Description -->
             <div class="collapsible-content" id="desc-2">
-              <div class="mt-12 pt-12 border-t border-outline-variant/20 grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-8 space-y-12">
+              <div class="mt-8 md:mt-12 pt-8 md:pt-12 border-t border-outline-variant/20 grid grid-cols-1 gap-8 md:gap-12">
+                <div class="w-full space-y-8 md:space-y-12">
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">1. About Syncrate</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">About Syncrate</h4>
                     <p class="text-on-surface-variant leading-relaxed">
                       Syncrate helps early-stage founders bring more structure to fundraising. Our work sits across investor positioning, deck and material refinement, investor targeting, and execution support.
                     </p>
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">2. The Role</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">The Role</h4>
                     <p class="text-on-surface-variant leading-relaxed">
                       As Fundraising Strategist, you will help drive delivery quality across client engagements. You will work on how founders are positioned, how their raise is presented, how investor materials are structured, and how the overall fundraising process is organized.
                     </p>
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">3. Responsibilities</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">Responsibilities</h4>
                     <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
                       <li>Refine fundraising narratives and investor-facing messaging.</li>
                       <li>Review and improve decks and other fundraising materials.</li>
@@ -296,7 +305,7 @@
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">4. Requirements</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">Requirements</h4>
                     <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
                       <li>Strong writing and communication skills.</li>
                       <li>Ability to think clearly about positioning, narrative, and investor expectations.</li>
@@ -307,34 +316,39 @@
                   </div>
 
                   <div>
-                    <h4 class="headline-font text-xl font-bold mb-4">5. Compensation</h4>
+                    <h4 class="headline-font text-xl font-bold mb-4">Compensation</h4>
                     <p class="text-on-surface-variant leading-relaxed">
                       Compensation aligned with role scope, experience, and level of involvement.
                     </p>
                   </div>
 
-                  <!-- Integrated Form -->
-                  <div class="pt-12 border-t border-outline-variant/10">
-                    <h4 class="headline-font text-xl mb-8">Application Details</h4>
-                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="pt-8 md:pt-12 border-t border-outline-variant/10">
+                    <h4 class="headline-font text-xl mb-6 md:mb-8">Application Details</h4>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                       <div class="space-y-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Full Name</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
+                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
                       </div>
+
                       <div class="space-y-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Email Address</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
+                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
                       </div>
+
                       <div class="space-y-2 md:col-span-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">LinkedIn Profile URL</label>
-                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
+                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
                       </div>
+
                       <div class="space-y-2 md:col-span-2">
                         <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Why are you a fit for this role?</label>
-                        <textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience with fundraising materials, positioning, strategy, or client execution." rows="4"></textarea>
+                        <textarea class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience with fundraising materials, positioning, strategy, or client execution." rows="4"></textarea>
                       </div>
-                      <div class="md:col-span-2 pt-4">
-                        <button class="w-full bg-on-background text-surface rounded-lg py-4 font-medium headline-font hover:opacity-90 transition-opacity" type="submit">Submit Application</button>
+
+                      <div class="md:col-span-2 pt-2 md:pt-4">
+                        <button class="w-full bg-primary text-on-primary rounded-lg py-4 font-medium headline-font hover:bg-primary/90 transition-all" type="submit">
+                          Apply for this position
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -348,7 +362,7 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-24 md:py-40 text-center max-w-4xl mx-auto px-8">
+    <section class="py-20 md:py-32 text-center max-w-4xl mx-auto px-5 sm:px-8">
       <h2 class="headline-font text-3xl md:text-4xl mb-6 tracking-tight">Don’t see the right role?</h2>
       <p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
         We are always open to hearing from strong operators, fundraisers, and founder-facing talent who can help Syncrate grow.
