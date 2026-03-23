@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-highest": "#e4e2de",
+            "tertiary-fixed": "#d5e3ff",
+            "surface-variant": "#e4e2de",
+            "on-tertiary-container": "#274873",
+            "on-primary-fixed": "#301400",
+            "on-background": "#1b1c1a",
+            "on-secondary-fixed-variant": "#474647",
+            "outline": "#84746a",
+            "on-surface-variant": "#51443c",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#001c3b",
+            "tertiary-container": "#98b7e9",
+            "on-primary-fixed-variant": "#693c19",
+            "tertiary-fixed-dim": "#a9c8fb",
+            "primary": "#85532e",
+            "primary-fixed-dim": "#fbb88b",
+            "on-tertiary-fixed-variant": "#274773",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#fbb88b",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#c8c6c7",
+            "outline-variant": "#d6c3b8",
+            "on-secondary-fixed": "#1c1b1c",
+            "primary-container": "#e8a87c",
+            "secondary": "#5f5e5f",
+            "error": "#ba1a1a",
+            "tertiary": "#405f8c",
+            "surface-container-lowest": "#ffffff",
+            "surface-tint": "#85532e",
+            "secondary-fixed": "#e5e2e3",
+            "inverse-surface": "#30312e",
+            "on-primary-container": "#693c19",
+            "on-secondary-container": "#636263",
+            "surface-container": "#f0eeea",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1b1c1a",
+            "surface-dim": "#dbdad6",
+            "surface-container-low": "#f5f3ef",
+            "secondary-container": "#e2dfe0",
+            "primary-fixed": "#ffdcc6",
+            "background": "#fbf9f5",
+            "surface-bright": "#fbf9f5",
+            "surface": "#fbf9f5",
+            "surface-container-high": "#eae8e4",
+            "inverse-on-surface": "#f2f0ec",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk", "sans-serif"],
+            "body": ["Space Grotesk", "sans-serif"],
+            "label": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "8px",
+            "lg": "8px",
+            "xl": "8px",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #fbf9f5;
+      color: #1b1c1a;
+    }
+    .headline-font { font-family: 'Space Grotesk', sans-serif; }
+
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out, opacity 0.3s ease-in;
+      opacity: 0;
+    }
+    .collapsible-content.expanded {
+      max-height: 2000px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 backdrop-blur-xl shadow-[0px_24px_48px_-12px_rgba(27,28,26,0.06)]">
+    <div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+      <div class="text-2xl font-normal tracking-tighter text-[#1b1c1a] headline-font">Syncrate</div>
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-[#1b1c1a]/60 font-['Space_Grotesk'] font-normal tracking-tight hover:text-[#85532e] transition-colors duration-300" href="#">Home</a>
+        <a class="text-[#1b1c1a]/60 font-['Space_Grotesk'] font-normal tracking-tight hover:text-[#85532e] transition-colors duration-300" href="#">Pricing</a>
+        <a class="text-[#1b1c1a]/60 font-['Space_Grotesk'] font-normal tracking-tight hover:text-[#85532e] transition-colors duration-300" href="#">Team</a>
+        <a class="text-[#85532e] font-['Space_Grotesk'] font-normal tracking-tight border-b border-[#85532e]/30 transition-colors duration-300" href="#">Careers</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-32">
+    <!-- Section 1: Hero -->
+    <section class="max-w-[1440px] mx-auto px-8 mb-24 md:mb-32">
+      <div class="max-w-4xl">
+        <span class="inline-block headline-font text-primary text-xs tracking-[0.2em] uppercase mb-6">Careers</span>
+        <h1 class="headline-font text-[3.5rem] md:text-[5rem] leading-[0.95] tracking-tighter text-on-background mb-8 md:mb-10 font-light">
+          Join Syncrate
+        </h1>
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed font-light">
+          We are building a sharper, more structured way for early-stage founders to approach fundraising. Right now, we are hiring for roles across sourcing and execution.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 2: Open Roles -->
+    <section class="bg-surface-container-low py-20 md:py-32">
+      <div class="max-w-[1440px] mx-auto px-8">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-14 md:mb-20 gap-8">
+          <h2 class="headline-font text-4xl md:text-5xl tracking-tighter">Open Roles</h2>
+          <div class="flex gap-4 flex-wrap">
+            <span class="px-4 py-1.5 bg-surface-container-lowest rounded-lg text-xs font-medium headline-font text-on-surface-variant border border-outline-variant/20">Remote</span>
+            <span class="px-4 py-1.5 bg-surface-container-lowest rounded-lg text-xs font-medium headline-font text-on-surface-variant border border-outline-variant/20">Early-stage</span>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Job Card 1 -->
+          <div class="bg-surface-container-lowest rounded-lg p-6 md:p-10 hover:shadow-[0px_24px_48px_-12px_rgba(27,28,26,0.06)] transition-all duration-500 group">
+            <div class="flex flex-col lg:flex-row justify-between lg:items-start gap-8">
+              <div class="space-y-4 flex-1">
+                <div class="flex items-center gap-3">
+                  <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  <span class="text-xs uppercase tracking-widest headline-font text-primary">Business Development</span>
+                </div>
+                <h3 class="headline-font text-2xl md:text-3xl tracking-tight">Business Development Lead</h3>
+                <p class="text-on-surface-variant max-w-2xl leading-relaxed">
+                  Own project sourcing for Syncrate by identifying and reaching out to founders who are preparing to raise or already in motion.
+                </p>
+                <button class="inline-flex items-center gap-2 text-primary headline-font text-sm font-semibold hover:gap-3 transition-all" onclick="document.getElementById('desc-1').classList.toggle('expanded')">
+                  See Job Description
+                  <span class="material-symbols-outlined text-lg">keyboard_arrow_down</span>
+                </button>
+              </div>
+              <div>
+                <button class="bg-primary text-on-primary rounded-lg px-8 py-4 text-sm font-medium headline-font flex items-center gap-2 hover:bg-primary/90 transition-all">
+                  Apply for this position
+                  <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Expanded Description -->
+            <div class="collapsible-content" id="desc-1">
+              <div class="mt-12 pt-12 border-t border-outline-variant/20 grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-8 space-y-12">
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">1. About Syncrate</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Syncrate supports early-stage founders across fundraising readiness, investor positioning, materials, investor targeting, and execution support. We work closely with founders who want a more structured fundraising process.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">2. The Role</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      As Business Development Lead, you will be responsible for identifying high-potential founders and projects that are a strong fit for Syncrate. Your focus is on starting relevant conversations, qualifying opportunities, and helping convert strong-fit founders into clients.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">3. Responsibilities</h4>
+                    <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
+                      <li>Source early-stage founders and projects that fit Syncrate’s offering.</li>
+                      <li>Run targeted outbound across platforms such as X, LinkedIn, Telegram, and email.</li>
+                      <li>Qualify inbound and outbound leads based on fundraising stage, clarity, and fit.</li>
+                      <li>Maintain an organized pipeline of founder conversations and follow-ups.</li>
+                      <li>Work closely with the Syncrate team to convert strong leads into closed engagements.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">4. Requirements</h4>
+                    <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
+                      <li>Strong communication and outreach skills.</li>
+                      <li>Comfortable initiating conversations with founders and operators.</li>
+                      <li>Good understanding of startups, fundraising, or early-stage ecosystems.</li>
+                      <li>Ability to work independently and stay organized across multiple conversations.</li>
+                      <li>Prior BD, sales, partnerships, or founder-facing experience is a plus.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">5. Compensation</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Performance-based compensation with upside tied to closed client engagements.
+                    </p>
+                  </div>
+
+                  <!-- Integrated Form -->
+                  <div class="pt-12 border-t border-outline-variant/10">
+                    <h4 class="headline-font text-xl mb-8">Application Details</h4>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="space-y-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Full Name</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
+                      </div>
+                      <div class="space-y-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Email Address</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
+                      </div>
+                      <div class="space-y-2 md:col-span-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">LinkedIn Profile URL</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
+                      </div>
+                      <div class="space-y-2 md:col-span-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Why are you a fit for this role?</label>
+                        <textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience with outreach, founder conversations, and sourcing." rows="4"></textarea>
+                      </div>
+                      <div class="md:col-span-2 pt-4">
+                        <button class="w-full bg-on-background text-surface rounded-lg py-4 font-medium headline-font hover:opacity-90 transition-opacity" type="submit">Submit Application</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Card 2 -->
+          <div class="bg-surface-container-lowest rounded-lg p-6 md:p-10 hover:shadow-[0px_24px_48px_-12px_rgba(27,28,26,0.06)] transition-all duration-500 group">
+            <div class="flex flex-col lg:flex-row justify-between lg:items-start gap-8">
+              <div class="space-y-4 flex-1">
+                <div class="flex items-center gap-3">
+                  <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  <span class="text-xs uppercase tracking-widest headline-font text-primary">Fundraising</span>
+                </div>
+                <h3 class="headline-font text-2xl md:text-3xl tracking-tight">Fundraising Strategist</h3>
+                <p class="text-on-surface-variant max-w-2xl leading-relaxed">
+                  Help founders present stronger raises by improving positioning, refining materials, sharpening investor targeting, and supporting execution quality.
+                </p>
+                <button class="inline-flex items-center gap-2 text-primary headline-font text-sm font-semibold hover:gap-3 transition-all" onclick="document.getElementById('desc-2').classList.toggle('expanded')">
+                  See Job Description
+                  <span class="material-symbols-outlined text-lg">keyboard_arrow_down</span>
+                </button>
+              </div>
+              <div>
+                <button class="bg-surface-container-low text-on-background border border-outline-variant/20 rounded-lg px-8 py-4 text-sm font-medium headline-font flex items-center gap-2 hover:bg-surface-container-high transition-all">
+                  Apply for this position
+                  <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Expanded Description -->
+            <div class="collapsible-content" id="desc-2">
+              <div class="mt-12 pt-12 border-t border-outline-variant/20 grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-8 space-y-12">
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">1. About Syncrate</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Syncrate helps early-stage founders bring more structure to fundraising. Our work sits across investor positioning, deck and material refinement, investor targeting, and execution support.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">2. The Role</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      As Fundraising Strategist, you will help drive delivery quality across client engagements. You will work on how founders are positioned, how their raise is presented, how investor materials are structured, and how the overall fundraising process is organized.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">3. Responsibilities</h4>
+                    <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
+                      <li>Refine fundraising narratives and investor-facing messaging.</li>
+                      <li>Review and improve decks and other fundraising materials.</li>
+                      <li>Help structure investor targeting and outreach priorities.</li>
+                      <li>Support client execution across follow-ups, process organization, and momentum tracking.</li>
+                      <li>Work directly with founders to make their raise clearer, sharper, and more investor-ready.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">4. Requirements</h4>
+                    <ul class="space-y-3 text-on-surface-variant list-disc pl-5">
+                      <li>Strong writing and communication skills.</li>
+                      <li>Ability to think clearly about positioning, narrative, and investor expectations.</li>
+                      <li>Experience with startup fundraising, venture, advisory, or strategy work is a plus.</li>
+                      <li>High attention to detail across materials and process.</li>
+                      <li>Comfort working closely with founders in a fast-moving environment.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="headline-font text-xl font-bold mb-4">5. Compensation</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Compensation aligned with role scope, experience, and level of involvement.
+                    </p>
+                  </div>
+
+                  <!-- Integrated Form -->
+                  <div class="pt-12 border-t border-outline-variant/10">
+                    <h4 class="headline-font text-xl mb-8">Application Details</h4>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="space-y-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Full Name</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
+                      </div>
+                      <div class="space-y-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Email Address</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
+                      </div>
+                      <div class="space-y-2 md:col-span-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">LinkedIn Profile URL</label>
+                        <input class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
+                      </div>
+                      <div class="space-y-2 md:col-span-2">
+                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Why are you a fit for this role?</label>
+                        <textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience with fundraising materials, positioning, strategy, or client execution." rows="4"></textarea>
+                      </div>
+                      <div class="md:col-span-2 pt-4">
+                        <button class="w-full bg-on-background text-surface rounded-lg py-4 font-medium headline-font hover:opacity-90 transition-opacity" type="submit">Submit Application</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 md:py-40 text-center max-w-4xl mx-auto px-8">
+      <h2 class="headline-font text-3xl md:text-4xl mb-6 tracking-tight">Don’t see the right role?</h2>
+      <p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
+        We are always open to hearing from strong operators, fundraisers, and founder-facing talent who can help Syncrate grow.
+      </p>
+      <div class="flex justify-center">
+        <button class="px-8 py-4 bg-primary text-on-primary rounded-lg headline-font text-sm font-medium hover:opacity-90 transition-opacity">
+          Send General Application
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
