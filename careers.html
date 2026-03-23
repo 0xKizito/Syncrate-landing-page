@@ -162,12 +162,6 @@
                   <span class="material-symbols-outlined text-lg">keyboard_arrow_down</span>
                 </button>
               </div>
-              <div>
-                <button class="bg-primary text-on-primary rounded-lg px-8 py-4 text-sm font-medium headline-font flex items-center gap-2 hover:bg-primary/90 transition-all">
-                  Apply for this position
-                  <span class="material-symbols-outlined text-lg">arrow_forward</span>
-                </button>
-              </div>
             </div>
 
             <div class="collapsible-content" id="desc-1">
@@ -219,32 +213,41 @@
                   <div class="pt-8 md:pt-12 border-t border-outline-variant/10">
                     <h4 class="headline-font text-xl mb-6 md:mb-8">Application Details</h4>
                     <form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                      <div class="space-y-2">
-                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Full Name</label>
-                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
-                      </div>
+  <div class="space-y-2">
+    <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Full Name</label>
+    <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Jane Doe" type="text"/>
+  </div>
 
-                      <div class="space-y-2">
-                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Email Address</label>
-                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
-                      </div>
+  <div class="space-y-2">
+    <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Email Address</label>
+    <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="jane@email.com" type="email"/>
+  </div>
 
-                      <div class="space-y-2 md:col-span-2">
-                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">LinkedIn Profile URL</label>
-                        <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
-                      </div>
+  <div class="space-y-2 md:col-span-2">
+    <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">LinkedIn Profile URL</label>
+    <input class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="linkedin.com/in/username" type="url"/>
+  </div>
 
-                      <div class="space-y-2 md:col-span-2">
-                        <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Why are you a fit for this role?</label>
-                        <textarea class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience with outreach, founder conversations, and sourcing." rows="4"></textarea>
-                      </div>
+  <div class="space-y-2 md:col-span-2">
+    <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">CV / Resume</label>
+    <input
+      class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50 file:mr-4 file:border-0 file:bg-primary file:text-on-primary file:px-4 file:py-2 file:rounded-md file:text-sm"
+      type="file"
+      accept=".pdf,.doc,.docx"
+    />
+  </div>
 
-                      <div class="md:col-span-2 pt-2 md:pt-4">
-                        <button class="w-full bg-primary text-on-primary rounded-lg py-4 font-medium headline-font hover:bg-primary/90 transition-all" type="submit">
-                          Apply for this position
-                        </button>
-                      </div>
-                    </form>
+  <div class="space-y-2 md:col-span-2">
+    <label class="text-xs uppercase tracking-wider headline-font text-on-surface-variant font-bold">Why are you a fit for this role?</label>
+    <textarea class="w-full min-w-0 bg-surface-container-low border-none rounded-lg p-4 text-sm focus:ring-1 focus:ring-primary/50" placeholder="Tell us about your experience and why you're a fit." rows="4"></textarea>
+  </div>
+
+  <div class="md:col-span-2 pt-2 md:pt-4">
+    <button class="w-full bg-primary text-on-primary rounded-lg py-4 font-medium headline-font hover:bg-primary/90 transition-all" type="submit">
+      Apply for this position
+    </button>
+  </div>
+</form>
                   </div>
                 </div>
               </div>
@@ -266,12 +269,6 @@
                 <button class="inline-flex items-center gap-2 text-primary headline-font text-sm font-semibold hover:gap-3 transition-all" onclick="document.getElementById('desc-2').classList.toggle('expanded')">
                   See Job Description
                   <span class="material-symbols-outlined text-lg">keyboard_arrow_down</span>
-                </button>
-              </div>
-              <div>
-                <button class="bg-primary text-on-primary rounded-lg px-8 py-4 text-sm font-medium headline-font flex items-center gap-2 hover:bg-primary/90 transition-all">
-                  Apply for this position
-                  <span class="material-symbols-outlined text-lg">arrow_forward</span>
                 </button>
               </div>
             </div>
